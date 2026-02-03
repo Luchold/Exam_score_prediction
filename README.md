@@ -1,12 +1,17 @@
-# Exam Score Prediction-K-Nearest Neighbors Regressor (KNN)-Linear Regression
+# Exam Score Prediction using Machine Learning Models
 
-This project uses the Exam_Score_Prediction.csv dataset from Kaggle and compares two regression models: Linear Regression and KNN Regressor.
+This project aims to predict student's exames score, using the dataset Exam_Score_Prediction from Kaggle.
+Three models are fitted : linear regression, KNN Regressor and Neural Network. 
+The performance of these models with respect to MSE are assessed and Neural Network shows better performance.
+
+## Main steps are: 
+- data preprocessing
+- cross validation
+- model stability assessing.
 
 ## Project Overview
 
 The goal of this project is to build predictive models that estimate students’ exam scores based on several academic and personal characteristics.
-
-Two models were trained and compared using cross-validation to determine which one performs best in terms of prediction accuracy.
 
 ## Dataset Description
 
@@ -14,26 +19,38 @@ Two models were trained and compared using cross-validation to determine which o
 
 ### Target Variable:exam_Score
 
-### Features:age, gender, course, study_hours, class_attendance, internet_access,sleep_hours, sleep_quality, study_method, facility_rating, exam_difficulty
+### Features:
+- age 
+- gender
+- course
+- study_hours
+- class_attendance
+- internet_access
+- sleep_hours
+- sleep_quality
+- study_method
+- facility_rating
+- exam_difficulty
 
 
-## Models Used
-### Linear Regression
+## Models adjusted
+- Linear Regression
 
-### K-Nearest Neighbors Regressor (KNN)
+- K-Nearest Neighbors Regressor (KNN)
+
+- Neural Network
 
 ## Model Evaluation
 
 Evaluation was performed using 10-fold cross-validation with the metric neg_mean_squared_error 
 
 
-## Results :linear Regression performed better than KNN
-
-
 
 ## Conclusion:
-Linear Regression provides better predictive accuracy for this dataset than KNN.
+- Linear Regression provides better predictive accuracy for this dataset than KNN 
+- Neural Network shows better performance than both Linear regression and KNN regressor.
 
-This suggests that the relationship between features and exam score is more linear than nonlinear, making Linear Regression a good fit.
+This suggests that the relationship between features and exam score is more complex to be explained by
+linear regression or KNN regressor making Neural Network good feed.
 
 ## Author Luc AGBOGNISSO, MSc student in Mathmatical Sciences at AIMS Ghana
