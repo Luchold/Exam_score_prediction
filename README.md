@@ -2,9 +2,9 @@
 
 This project aims to predict student's exames score, using the dataset Exam_Score_Prediction from Kaggle.
 Three models are fitted : linear regression, KNN Regressor and Neural Network. 
-The performance of these models with respect to MSE are assessed and Neural Network shows better performance.
+The performance of these models with respect to MSE are assessed and both Linear regression and Neural Network show better performance.
 
-## Main steps are: 
+## Main steps are 
 - data preprocessing
 - cross validation
 - model stability assessing.
@@ -19,7 +19,7 @@ The goal of this project is to build predictive models that estimate students’
 
 ### Target Variable:exam_Score
 
-### Features:
+### Features
 - age 
 - gender
 - course
@@ -46,11 +46,12 @@ Evaluation was performed using 10-fold cross-validation with the metric neg_mean
 
 
 
-## Conclusion:
+## Conclusion
 - Linear Regression provides better predictive accuracy for this dataset than KNN 
-- Neural Network shows better performance than both Linear regression and KNN regressor.
+-The Neural Network achieves the best overall performance compared to Linear Regression and KNN; however, it exhibits sensitivity to random
+initialization, with one out of sixteen runs (6.25%) resulting in a significantly higher MSE, indicating occasional model instability.
 
-This suggests that the relationship between features and exam score is more complex to be explained by
-linear regression or KNN regressor making Neural Network good feed.
-
-## Author Luc AGBOGNISSO, MSc student in Mathmatical Sciences at AIMS Ghana
+## This suggests that 
+- The relationship between the features and exam scores appears to be complex and nonlinear.
+- The observed instability may be due to the limited dataset size or suboptimal hyperparameter tuning, suggesting that further optimization 
+could improve model stability.
